@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="7dp"
+    android:elevation="25dp"
+    app:cardElevation="25dp"
+    app:cardCornerRadius="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_image"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="25dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="15dp"
+            android:layout_width="320dp"
+            android:layout_height="280dp">
+
+            <ImageView
+                android:elevation="20dp"
+                android:id="@+id/stock_pd_pdImage"
+                android:layout_width="320dp"
+                android:layout_height="280dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shairt"
+                >
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/card_image"
+            android:id="@+id/layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/stock_pd_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Bill No:"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#1B1818"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/stock_pd_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="productName:"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#1B1818"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/stock_pd_categoryName"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Category Name:"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#1B1818"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/stock_pd_size"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="product Size:"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#1B1818"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_marginLeft="8dp"
+                android:id="@+id/stock_pd_Sellprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sell price:"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#1B1818"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_marginLeft="8dp"
+                android:id="@+id/stock_pd_sell_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sell Discount:"
+                android:textColor="#CA2525"
+                android:textColorHint="#EDE7E7"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/stock_pd_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="purchse quantity:"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#1B1818"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/stock_pd_sellQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="sell Quantity:"
+                android:textColor="#0C0C0C"
+                android:textColorHint="#1B1818"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/stock_pd_stock"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/final_show_pd_orderStatus"
+                android:layout_marginTop="10dp"
+                android:text="Stock:"
+                android:textColor="#121111"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/stock_pd_deatils"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="product Deatils:"
+                android:textColor="#101010"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

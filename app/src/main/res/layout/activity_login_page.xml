@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/log"
+    tools:context=".Login_page">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/login_title"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="60dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="8dp"
+                android:elevation="30dp"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login page"/>
+
+
+
+            <LinearLayout
+                android:layout_below="@+id/login_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:elevation="30dp"
+                    android:drawableLeft="@drawable/email_icon"
+                    android:id="@+id/lguser_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/layout_back_white"
+                    android:hint="\t \tEnter Your Gmail"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:elevation="30dp"
+                    android:drawableLeft="@drawable/lock"
+                    android:id="@+id/lg_edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/layout_back_white"
+                    android:hint="\t \t Enter Your Password"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <info.hoang8f.widget.FButton
+                    android:background="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_password"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Long in"
+                    android:id="@+id/login_btn"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/sing_up"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="8dp"
+                    android:elevation="50dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dont' have an Account?!Register Here"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:padding="8dp"
+    tools:context=".Add_json">
+
+  <EditText
+      android:id="@+id/edit_pd_id"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:hint="product ID"
+    android:textStyle="bold"
+    android:textSize="18sp"/>
+
+  <EditText
+      android:id="@+id/edit_pdName"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="product Name"
+      android:textStyle="bold"
+      android:textSize="18sp"/>
+
+  <EditText
+      android:id="@+id/edit_pdprice"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="product price"
+      android:textStyle="bold"
+      android:textSize="18sp"/>
+
+  <EditText
+      android:id="@+id/edit_pdDetails"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="product Details"
+      android:textStyle="bold"
+      android:textSize="18sp"/>
+
+  <Button
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:text="Save"
+    android:onClick="Add_jsonData"/>
+</LinearLayout>

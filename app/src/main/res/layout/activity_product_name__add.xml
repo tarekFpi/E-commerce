@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="20dp"
+    app:cardElevation="20dp"
+    tools:context=".product_name_Add">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/pd_add_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="product Name Add"
+                android:background="#5C58D8"
+                app:titleTextColor="#E4DEDE"
+                android:textAlignment="center"/>
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:textSize="22dp"
+                android:textAlignment="center"
+                android:textColor="#151515"
+                android:padding="15dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Name Add"/>
+            <ScrollView
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">                                                                                         ">
+
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/edit_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/layout_degin"
+                        android:hint="product Name"
+                        android:padding="15dp"
+                        android:textColor="#090908"
+                        android:textColorHint="#090908"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/upload_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edit_product_name"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="8dp"
+                        android:text="Current Date"
+                        android:textAlignment="center"
+                        android:textColor="#090908"
+                        android:textSize="18sp" />
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/btn_image_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/upload_date"
+                        android:layout_margin="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/layout_back_white"
+                        android:onClick="Save"
+                        android:text="Save"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

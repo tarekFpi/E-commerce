@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="15dp"
+    android:elevation="20dp"
+    tools:context=".product_purchase">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/cap_add_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="Purchase Prodcut"
+                    android:background="#5C58D8"
+                    app:titleTextColor="#E4DEDE"
+                    android:textAlignment="center"/>
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+          android:layout_width="300dp"
+          android:layout_height="300dp"
+          android:layout_gravity="center"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="10dp"
+          android:elevation="30dp"
+          app:cardCornerRadius="20dp"
+          android:background="@drawable/search_back"
+          app:cardElevation="30dp">
+
+        <ImageView
+            android:id="@+id/image_id"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+      </androidx.cardview.widget.CardView>
+
+
+      <EditText
+          android:inputType="number"
+          android:padding="15dp"
+          android:layout_marginRight="8dp"
+          android:textColor="#151514"
+          android:textColorHint="#0E0E0D"
+     android:background="@drawable/layout_degin"
+          android:id="@+id/edit_Id"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Id"
+          android:textSize="18sp"
+          android:textStyle="bold"/>
+
+      <Spinner
+          android:spinnerMode="dropdown"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:background="@drawable/spnner_style"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:textAlignment="center"
+          android:id="@+id/spinner_product_name"
+          />
+  <Spinner
+      android:background="@drawable/spnner_style"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:textAlignment="center"
+      android:id="@+id/spinner_category_name"
+
+      />
+
+      <EditText
+          android:inputType="number"
+          android:padding="15dp"
+          android:textColor="#151514"
+          android:textColorHint="#0E0E0D"
+          android:background="@drawable/layout_degin"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="8dp"
+          android:layout_marginLeft="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Parchase Quantity"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:id="@+id/edit_quantity"/>
+
+      <EditText
+          android:inputType="number"
+          android:padding="15dp"
+          android:layout_marginRight="8dp"
+          android:textColor="#151514"
+          android:textColorHint="#0E0E0D"
+          android:background="@drawable/layout_degin"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Purchase  Price"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:id="@+id/edit_price"/>
+
+
+      <EditText
+          android:inputType="number"
+          android:padding="15dp"
+          android:layout_marginRight="8dp"
+          android:textColor="#151514"
+          android:textColorHint="#0E0E0D"
+          android:background="@drawable/layout_degin"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Selling price"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:id="@+id/edit_selling_price"/>
+
+      <EditText
+
+          android:padding="15dp"
+          android:layout_marginRight="8dp"
+          android:textColor="#151514"
+          android:textColorHint="#0E0E0D"
+          android:background="@drawable/layout_degin"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Sublayer Name"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:id="@+id/edit_sublayer"/>
+
+      <EditText
+         android:inputType="number"
+          android:padding="15dp"
+          android:layout_marginRight="8dp"
+          android:textColor="#151514"
+          android:textColorHint="#0E0E0D"
+          android:background="@drawable/layout_degin"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Sell Discount"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:id="@+id/edit_Discount"/>
+
+      <EditText
+          android:inputType="number"
+          android:padding="15dp"
+          android:layout_marginRight="8dp"
+          android:textColor="#151514"
+          android:textColorHint="#0E0E0D"
+          android:background="@drawable/layout_degin"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Purchase Discount"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:id="@+id/edit_purchase_discount"/>
+
+      <EditText
+          android:padding="15dp"
+          android:layout_marginRight="8dp"
+          android:textColor="#151514"
+          android:textColorHint="#0E0E0D"
+          android:background="@drawable/layout_degin"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Description"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:id="@+id/edit_pdDetails"/>
+
+      <EditText
+
+          android:padding="15dp"
+          android:layout_marginRight="8dp"
+          android:textColor="#151514"
+          android:textColorHint="#0E0E0D"
+          android:background="@drawable/layout_degin"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="product Size"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:id="@+id/edit_pdSize"/>
+      <info.hoang8f.widget.FButton
+          android:layout_margin="8dp"
+          android:background="@drawable/layout_back_white"
+          android:id="@+id/btn_image_add"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="8dp"
+          android:text="Save"
+          android:textSize="20dp"
+          android:textStyle="bold" />
+    </LinearLayout>
+  </ScrollView>
+
+
+</androidx.cardview.widget.CardView>

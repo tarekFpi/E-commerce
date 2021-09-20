@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="15dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColorHint="#121211"
+            android:textColor="#131312"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Id:"
+            android:id="@+id/text_update_Id"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"/>
+
+        <EditText
+            android:textColorHint="#0E0E0E"
+            android:textColor="#151513"
+            android:padding="20dp"
+            android:background="@drawable/layout_degin"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/edit_Upd_Name"/>
+
+        <EditText
+            android:inputType="number"
+            android:textColorHint="#1B1B19"
+            android:textColor="#131313"
+            android:padding="20dp"
+            android:background="@drawable/layout_degin"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Purchase Price:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/edit_upd_price"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <info.hoang8f.widget.FButton
+                android:layout_width="120dp"
+                android:id="@+id/btn_update"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:layout_margin="10dp"
+                android:onClick="json_AddData"
+                tools:ignore="OnClick" />
+
+            <info.hoang8f.widget.FButton
+                android:layout_width="120dp"
+                android:id="@+id/btn_exit"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:layout_margin="10dp"
+                android:onClick="json_AddData"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="15dp"
+    app:cardElevation="15dp"
+    tools:context=".User_order_Show">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/cap_add_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="User Order Show"
+                android:background="#5C58D8"
+                app:titleTextColor="#E4DEDE"
+                android:textAlignment="center"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="7dp"
+            android:layout_below="@+id/appbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/user_order_show_recyclerview"
+           />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

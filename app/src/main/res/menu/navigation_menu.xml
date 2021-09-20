@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <group>
+      <item
+          android:title="Home"
+          android:icon="@drawable/ic_down"
+          app:showAsAction="never"
+          android:id="@+id/home_id"/>
+
+      <item
+          android:title="My order"
+          android:icon="@drawable/ic_down"
+          app:showAsAction="never"
+          android:id="@+id/my_order"/>
+
+      <item
+          android:title="Setting"
+          android:icon="@drawable/ic_down"
+          app:showAsAction="never"
+          android:id="@+id/setting_id"/>
+      <item
+          android:title="Exit"
+          android:icon="@drawable/ic_down"
+          app:showAsAction="never"
+          android:id="@+id/exit_id"/>
+
+  </group>
+</menu>

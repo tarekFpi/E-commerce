@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product_category_name">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5C58D8"
+            android:textAlignment="center"
+            app:title="Category Name Show"
+            app:titleTextColor="#DCCECE" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:layout_below="@+id/appbar_id"
+        android:background="@drawable/search_back"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/product_search_category"
+        android:elevation="30dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_earch"
+        android:hint="Search Category Name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/product_search_category"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/category_name_recycler"/>
+</RelativeLayout>

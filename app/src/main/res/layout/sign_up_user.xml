@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="30dp"
+    app:cardElevation="30dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+     <TextView
+         android:layout_marginLeft="10dp"
+         android:text="Serial No"
+         android:elevation="20dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textColor="@color/black"
+         android:textStyle="bold"
+         android:textSize="18sp"
+         android:id="@+id/sing_user_serial_id"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="15dp"
+          android:text="User Name"
+          android:elevation="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:id="@+id/sing_user_name"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="15dp"
+          android:text="Gmail"
+          android:elevation="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:id="@+id/sign_user_gmail"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_marginBottom="5dp"
+          android:layout_marginTop="15dp"
+          android:text="password"
+          android:elevation="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          android:textSize="18sp"
+          android:id="@+id/user_password"/>
+  </LinearLayout>
+</androidx.cardview.widget.CardView>

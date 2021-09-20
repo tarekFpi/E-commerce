@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="15dp"
+    android:elevation="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_margin="7dp"
+        android:background="@drawable/angry"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/layout_back_white"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/category_pd_image"
+            android:layout_width="300dp"
+            android:scaleType="fitXY"
+            android:layout_height="310dp"/>
+
+        <TextView
+            android:layout_below="@+id/category_pd_image"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:id="@+id/cate_show_pd_cord"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Cord"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:textColor="#ECECE3"
+            android:textColorHint="#0C0C0C"
+            android:layout_below="@+id/cate_show_pd_cord"
+            android:id="@+id/cate_show_pd_name"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:layout_below="@+id/cate_show_pd_name"
+            android:id="@+id/cate_show_pd_size"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_alignBaseline="@id/cate_show_pd_name"
+            android:id="@+id/cate_show_pd_quan"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Quantity:"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_alignBaseline="@id/cate_show_pd_cord"
+            android:id="@+id/cate_show_pd_discount"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount:"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/cate_show_pd_totoalPrice"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/cate_show_pd_name"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

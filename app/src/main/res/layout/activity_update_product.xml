@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="20dp"
+    app:cardElevation="20dp"
+    android:orientation="vertical"
+    tools:context=".Update_product">
+
+<LinearLayout
+    android:background="@drawable/angry"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/text_up_Id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:padding="20dp"
+        android:background="@drawable/layout_back_white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/edit_Up_Name"/>
+
+    <EditText
+        android:padding="20dp"
+        android:background="@drawable/layout_back_white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/edit_up_price"/>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_margin="10dp"
+        android:onClick="json_AddData"
+        tools:ignore="OnClick" />
+</LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

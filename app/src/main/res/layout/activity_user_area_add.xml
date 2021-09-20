@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="15dp"
+    android:elevation="20dp"
+    tools:context=".product_purchase">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/cap_add_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Category Name Add"
+                android:background="#5C58D8"
+                app:titleTextColor="#E4DEDE"
+                android:textAlignment="center"/>
+        </com.google.android.material.appbar.AppBarLayout>
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Area Add"
+        android:textSize="22dp"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textColor="#10100F"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        />
+
+
+    <ScrollView
+
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:elevation="20dp"
+                android:inputType="text"
+                android:padding="15dp"
+                android:layout_marginRight="8dp"
+                android:textColor="#151514"
+                android:textColorHint="#0E0E0D"
+                android:background="@drawable/layout_degin"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Region Name"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/edit_region"/>
+
+            <EditText
+                android:elevation="20dp"
+                android:inputType="text"
+                android:padding="15dp"
+                android:layout_marginRight="8dp"
+                android:textColor="#151514"
+                android:textColorHint="#0E0E0D"
+                android:background="@drawable/layout_degin"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City Name"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/edit_cityName"/>
+
+            <EditText
+                android:id="@+id/edit_areaName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/layout_degin"
+                android:hint="Area Name"
+                android:padding="15dp"
+                android:textColor="#151514"
+                android:textColorHint="#0E0E0D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <info.hoang8f.widget.FButton
+                android:layout_margin="8dp"
+                android:background="@drawable/layout_back_white"
+                android:id="@+id/user_areaAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:text="Save"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

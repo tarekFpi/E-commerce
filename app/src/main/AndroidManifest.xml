@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my_json_review">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Admin_informationShow"></activity>
+        <activity android:name=".Login_page" />
+        <activity android:name=".Admin_Homepage" />
+        <activity android:name=".Stock_product" />
+        <activity android:name=".product_show" />
+        <activity android:name=".product_nameShow" />
+        <activity android:name=".Messages_page" />
+        <activity android:name=".SingUp_page" />
+        <activity android:name=".User_order_Show" />
+        <activity android:name=".User_all_order_showAdmin" />
+        <activity android:name=".product_category_name" />
+        <activity android:name=".UserOrder_CategoryShow" />
+        <activity android:name=".AllUser_show" />
+        <activity android:name=".Category_nameAdd" />
+        <activity android:name=".purchsase_orderShow" />
+        <activity android:name=".Payment_order" />
+        <activity android:name=".product_name_Add" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".product_CategoryShow"
+            android:label="@string/title_activity_user_location" />
+        <activity android:name=".User_Address"/>
+        <activity android:name=".user_location" />
+        <activity android:name=".User_areaAdd" />
+        <activity android:name=".product_Category" />
+        <activity android:name=".Animations_Activity" />
+        <activity android:name=".Update_product" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".test_Image" />
+        <activity android:name=".json_list" />
+        <activity android:name=".Add_json" />
+        <activity android:name=".Volley_test" />
+        <activity android:name=".product_purchase">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

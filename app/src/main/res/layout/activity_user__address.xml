@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="15dp"
+    app:cardElevation="20dp"
+    tools:context=".User_Address">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/cap_add_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="User Address Create"
+                android:background="#5C58D8"
+                app:titleTextColor="#E4DEDE"
+                android:textAlignment="center"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:background="@drawable/search_back"
+            android:layout_margin="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/appbar_id"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/marquee_id"
+                    android:scrollHorizontally="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:ellipsize="marquee"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#E32671"
+                    android:text="if your Order Already Is done
+After the number phon Number Click"/>
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/layout_degin"
+                    android:hint="User Name"
+                    android:padding="20dp"
+                    android:textColor="#272726"
+                    android:textColorHint="#272726"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/layout_degin"
+                    android:hint="Email"
+                    android:padding="20dp"
+                    android:textColor="#272726"
+                    android:textColorHint="#272726"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spnner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:id="@+id/spinner_regionName"
+                    />
+
+                <Spinner
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spnner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:id="@+id/spinner_cityName"
+                    />
+
+
+                <Spinner
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spnner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:id="@+id/spinner_areaName"
+                    />
+
+                <EditText
+                    android:id="@+id/user_flat_no_id"
+                    android:textColorHint="#272726"
+                    android:inputType="textImeMultiLine"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/layout_degin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Flat no, Building name"
+                    android:textStyle="bold"
+                    android:textColor="#272726"
+                    android:textSize="18sp"/>
+
+
+
+                <EditText
+                    android:inputType="number"
+                    android:textColorHint="#272726"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/layout_degin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/user_phon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phon Number"
+                    android:textStyle="bold"
+                    android:textColor="#272726"
+                    android:textSize="18sp"/>
+
+                <Spinner
+                    android:spinnerMode="dropdown"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spnner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:id="@+id/spinner_shipping"
+                    />
+                <TextView
+                    android:textColor="#272726"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:background="@drawable/layout_degin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date:"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/deatils_current_Date"/>
+
+                <TextView
+                    android:textColor="#272726"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select a Label For Effective Delivery:"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginTop="12dp"/>
+
+   <LinearLayout
+       android:layout_marginTop="5dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+     <RadioGroup
+         android:id="@+id/radi_group"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <RadioButton
+             android:id="@+id/official_id"
+             android:layout_marginLeft="5dp"
+             android:text="OFFICIAL"
+             android:textStyle="bold"
+             android:textSize="18sp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+         <RadioButton
+             android:id="@+id/home_id"
+             android:layout_marginLeft="6dp"
+             android:text="HOME"
+             android:textStyle="bold"
+             android:textSize="18sp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+     </RadioGroup>
+
+
+   </LinearLayout>
+
+
+                <info.hoang8f.widget.FButton
+                    android:background="@drawable/input_layout"
+                    android:onClick="Use_Adress_Data"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Add Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
